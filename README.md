@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/mtennoe/swagger-typescript-codegen.svg?branch=master)](https://travis-ci.com/mtennoe/swagger-typescript-codegen)
 
-This package generates a TypeScript class from a [swagger specification file](https://github.com/wordnik/swagger-spec). The code is generated using [mustache templates](https://github.com/mtennoe/swagger-js-codegen/tree/master/lib/templates) and is quality checked by [jshint](https://github.com/jshint/jshint/) and beautified by [js-beautify](https://github.com/beautify-web/js-beautify).
+This package generates a TypeScript class from a [swagger specification file](https://github.com/wordnik/swagger-spec). The code is generated using [mustache templates](https://github.com/mtennoe/swagger-js-codegen/tree/master/templates) and is quality checked by [jshint](https://github.com/jshint/jshint/) and beautified by [js-beautify](https://github.com/beautify-web/js-beautify).
 
 The typescript generator is based on [superagent](https://github.com/visionmedia/superagent) and can be used for both nodejs and the browser via browserify/webpack.
 
@@ -185,6 +185,8 @@ methods:
             type: boolean
           isFormParameter:
             type: boolean
+          collectionFormat:
+            type: string
       successfulResponseType:
         type: string
         description: The type of a successful response. Defaults to any for non-parsable types or Swagger 1.0 spec files
